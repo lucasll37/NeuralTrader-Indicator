@@ -27,7 +27,8 @@ register_matplotlib_converters()
 np.random.seed(seed)
 
 # Confirma se o TensorFlow pode acessar a GPU
-checkGPU()
+# checkGPU()
+
 
 # Obtenção dos Dados
 if downloadData:
