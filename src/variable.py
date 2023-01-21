@@ -1,64 +1,28 @@
-from datetime import datetime
-
 _PIP = 0.0001
 
-# ---- Trader --------------
+# ---- MetaTrader5 --------------
 # //////////////////////////////////////
 account = 'Real'  # 'Real' or 'Demo' ///
 # //////////////////////////////////////
 
-# operation = True
 ###################
 pathModel = './saveModel'
 pathModelTrain = pathModel + '/20-January-06h53min/'
 symbol = "EURUSD"
-
-# startDate = datetime(2022, 11, 3)
-# lot = 0.01
-# deviation = 20
 ###################
-# tpDelta = 1
-# slDelta = 1
-###################
-# maxLoss24h = 50
-# maxLoss = 100
+tpDelta = 1
+slDelta = 1
 ###################
 CoefAngInf = -0.20
 CoefAngSup = 0.20
 maxIndLucas = 1.5
 minModDelta = 20 * _PIP
 ###################
-# restrictWeekday = False
-# restrictHour = False
-# fixedDelta = False
-# decreaseDelta = False
-#trailStop = False
 graphic = True
 ###################
 stepsBack = 90
 stepsFoward = 15
 stepsShow = 90
-###################
-# RESTRICT WEEKDAY 0: Monday ... 6: Sunday
-# intervalOper = 25
-# startWeekday = 0  # inclusive
-# stopWeekday = 6  # inclusive
-###################
-# RESTRICT HOUR
-# local + 6
-# startHour = 0  # inclusive
-# stopHour = 23  # inclusive
-###################
-# FIXED DELTA
-# estaticDelta = 20 * _PIP
-###################
-# DECREASE DELTA
-# maxModDelta = 30 * _PIP
-###################
-# TRAIL STOP
-# trailStopSpeed = 1
-# fee = 2 * _PIP
-
 
 # ---- Train ---------------
 trainCandles = 100000

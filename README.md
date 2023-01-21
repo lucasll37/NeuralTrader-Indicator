@@ -12,7 +12,7 @@ Este é um projeto de indicador gráfico que utiliza Inteligência Artificial pa
 
 **logs**: logs gerados pelo tensorflow de métricas do treinamento. Devem ser consultadas através do tensorboar com o comando:
 
-    `tersorboard --logdir ./logs`
+    `tensorboard --logdir ./logs`
 
 **saveModel**: contém os pesos do modelo pré-treinado.
 
@@ -34,20 +34,14 @@ Este é um projeto de indicador gráfico que utiliza Inteligência Artificial pa
 - variable: variáveis de configuração
 
 ## Principais variáveis de configuração
+
 - `trainCandles`: quantidade de candles utilizados ao todo para treino, teste e validação.
-
 - `seed`: semente de criação de variáveis eleatórias.
-
 - `selection`: ativa modo de seleção para minimizar a carga de geração de gráficos de acordo com os critérios (`CoefAngInf`, `CoefAngSup`, `maxIndLucas`, `minModDelta`).
-
 - `graphic`: habilita a geração de gráficos.
-
 - `account`: define a qual conta do MetaTrader5 acessar (previamente cadastradas em `./src/.env`).
-
 - `stepsShow`: define a quantidade de candles de previsão serão mostrados (por padrão é o mesmo número de candles que o algoritmo utiliza pra a previsão).
-
 - `useSaveModel`: define se o modelo será retreinado a partir de pesos aleatórios ("do zero") ou se será utilizado um modelo já treinado. por padrão, o indicador gráfico utiliza o modelo já treinado. A depender da configuração do seu computador, o treinamento por ser computacionamente exaustivamente.
-
 
 ## Modo de operação
 
@@ -61,12 +55,12 @@ Utilizar API MetaTrader5 para obtenção dos dados (`downloadData = True`) (perm
 
 Para isso, crie uma cópia do arquivo `.env.example` no mesmo local do diretório do arquivo original e renomei-o para `.env`, preenchendo os campos de credenciais da sua conta. Para maiores detalhes, consulte a [documentação oficial](https://www.mql5.com/pt/docs) da plataforma.
 
-
 ### Configure o ambiente
+
 Com o terminal aberto no diretório raiz do projeto, siga os passos:
 
 Feita essa escolha e estando num ambiente configurado com `Python 3.9.x`, execute o seguinte comando para o download das dependências:
-`pip install -r reqirements`
+`pip install -r ./requirements.txt`
 
 A relação nominal das dependências pode ser consultada no arquivo `requirements.txt`
 
@@ -80,4 +74,3 @@ Ao término do processamento, será criado:
 
 - pasta `./graphics/train`: uma subpasta com gráficos de inferência do indicador gráfico.
 - pasta `./data`: Planilha de excel com as métricas obtidas por candle ao fim da validação.
-
