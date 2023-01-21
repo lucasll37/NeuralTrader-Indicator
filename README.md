@@ -1,9 +1,9 @@
 ﻿# NeuralTrader-Indicator
 
 Este é um projeto de indicador gráfico que utiliza Inteligência Artificial para tentar prever o comportamento de ativos no curtíssimo prazo
-<div align="center">
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/kHevGWlsoNo/0.jpg)](https://www.youtube.com/watch?v=kHevGWlsoNo)
-</div>
+
+[![Vídeo descritivo](https://img.youtube.com/vi/kHevGWlsoNo/0.jpg)](https://www.youtube.com/watch?v=kHevGWlsoNo)
+
 ## Descrição das pastas e arquivos
 
 **data**: contém os dados para treinamento, teste e inferência e ainda recebe uma planilha gerada ao fim do treinamento com as métricas obtidas por candle ao fim da validação.
