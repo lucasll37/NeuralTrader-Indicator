@@ -1,6 +1,6 @@
 ﻿# NeuralTrader-Indicator
 
-Este é um projeto de indicador gráfico que utiliza Inteligência Artificial para tentar prever o comportamento de ativos no curtíssimo prazo
+Este é um projeto de indicador gráfico que utiliza Inteligência Artificial para tentar prever o comportamento de ativos no curtíssimo prazo.
 
 [![Vídeo descritivo](https://img.youtube.com/vi/kHevGWlsoNo/0.jpg)](https://www.youtube.com/watch?v=kHevGWlsoNo)
 
@@ -10,7 +10,7 @@ Este é um projeto de indicador gráfico que utiliza Inteligência Artificial pa
 
 **graphics**: contém os gráficos gerados com a massa de dados de validação após a inferência.
 
-**logs**: logs gerados pelo tensorflow de métricas do treinamento. Devem ser consultadas através do tensorboar com o comando:
+**logs**: logs gerados pelo tensorflow de métricas do treinamento. Devem ser consultadas através do tensorboard com o comando:
 
     `tensorboard --logdir ./logs`
 
@@ -28,7 +28,7 @@ Este é um projeto de indicador gráfico que utiliza Inteligência Artificial pa
 - model: Modelo preditivo
 - mt5: API para comunicação com o homebroker MetaTrader5
 - optimizers: configuração dos otimizadores de treinamento
-- train: arquivo principal do treinamento. gerencia depois funcionalidades
+- train: arquivo principal do treinamento. gerencia demais funcionalidades
 - trainerModel: módulo de treinamento que abstrai as especificidades do framework de treinamento
 - utils: funções utilitárias
 - variable: variáveis de configuração
@@ -39,9 +39,9 @@ Este é um projeto de indicador gráfico que utiliza Inteligência Artificial pa
 - `seed`: semente de criação de variáveis eleatórias.
 - `selection`: ativa modo de seleção para minimizar a carga de geração de gráficos de acordo com os critérios (`CoefAngInf`, `CoefAngSup`, `maxIndLucas`, `minModDelta`).
 - `graphic`: habilita a geração de gráficos.
-- `account`: define a qual conta do MetaTrader5 acessar (previamente cadastradas em `./src/.env`).
+- `account`: define a qual conta do MetaTrader5 acessar (previamente cadastradas em `./.env`).
 - `stepsShow`: define a quantidade de candles de previsão serão mostrados (por padrão é o mesmo número de candles que o algoritmo utiliza pra a previsão).
-- `useSaveModel`: define se o modelo será retreinado a partir de pesos aleatórios ("do zero") ou se será utilizado um modelo já treinado. por padrão, o indicador gráfico utiliza o modelo já treinado. A depender da configuração do seu computador, o treinamento por ser computacionamente exaustivamente.
+- `useSaveModel`: define se o modelo será retreinado a partir de pesos aleatórios ("do zero") ou se será utilizado um modelo já treinado. Por padrão, o indicador gráfico utiliza o modelo já treinado. A depender da configuração do seu computador, o treinamento por ser computacionamente exaustivamente.
 
 ## Modo de operação
 
