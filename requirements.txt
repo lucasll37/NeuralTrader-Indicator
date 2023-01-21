@@ -1,0 +1,11 @@
+keras==2.10.0
+matplotlib==3.6.2
+MetaTrader5==5.0.43
+mplfinance==0.12.9b7
+numpy==1.24.1
+pandas==1.4.4
+python-dotenv==0.21.1
+pytz==2022.7
+scikit_learn==1.2.0
+seaborn==0.11.2
+tensorflow==2.10.0
