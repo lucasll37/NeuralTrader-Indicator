@@ -1,3 +1,5 @@
+from datetime import datetime
+
 _PIP = 0.0001
 
 # ---- MetaTrader5 --------------
@@ -12,6 +14,11 @@ symbol = "EURUSD"
 ###################
 tpDelta = 1
 slDelta = 1
+deviation = 20
+trailStopSpeed = 1
+fee = 2 * _PIP
+lot = 0.01
+startDate = datetime(2022, 11, 3)
 ###################
 CoefAngInf = -0.20
 CoefAngSup = 0.20

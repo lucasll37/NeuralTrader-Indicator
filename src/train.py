@@ -37,9 +37,6 @@ else:
     rates_frame = pd.read_csv('./data/100.000-candles.csv')
     rates_frame.set_index("Date", inplace=True)
     rates_frame.index = pd.to_datetime(rates_frame.index)
-    """
-    rates_frame.index = pd.to_datetime(rates_frame.index, unit='s')
-    """
 
 # Model
 if useSaveModel:
