@@ -50,7 +50,7 @@ Este é um projeto de indicador gráfico que utiliza Inteligência Artificial pa
 1º Opção)
 Utilizar para o treinamento os dados fornecidos na pasta data (`downloadData = False`)
 
-2º Opção)
+2º Opção - Somente Windows)
 Utilizar API MetaTrader5 para obtenção dos dados (`downloadData = True`) (permite maior controle para escolha de ativos e períodos)
 
 Para isso, crie uma cópia do arquivo `.env.example` no mesmo local do diretório do arquivo original e renomei-o para `.env`, preenchendo os campos de credenciais da sua conta. Para maiores detalhes, consulte a [documentação oficial](https://www.mql5.com/pt/docs) da plataforma.
